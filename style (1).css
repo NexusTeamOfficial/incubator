@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', Arial, sans-serif;
+  background: #1a1a1a;
+  color: #fff;
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  background: #222c36;
+  padding: 24px 16px;
+  width: 200px;
+  min-width: 180px;
+}
+.sidebar h2 {
+  color: #ffd700;
+  margin-bottom: 24px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar li {
+  padding: 12px 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #aaa;
+  border-bottom: 1px solid #333;
+}
+.sidebar li.active, .sidebar li:hover {
+  color: #fff;
+  background: #30415d;
+}
+.main-section {
+  flex: 1;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #181c25;
+}
+.rewards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  gap: 18px;
+  margin-bottom: 30px;
+}
+.reward-card {
+  background: #2a2f3e;
+  border: 2px solid #444;
+  border-radius: 10px;
+  padding: 8px;
+  transition: border 0.2s;
+  cursor: pointer;
+}
+.reward-card.selected, .reward-card:hover {
+  border: 2px solid #ffd700;
+}
+.reward-card img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+.confirm-btn {
+  background: linear-gradient(90deg, #ffd700, #ff9800);
+  border: none;
+  color: #232323;
+  padding: 12px 32px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 18px;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px #0006;
+}
+.confirm-btn:hover {
+  filter: brightness(1.1);
+}
+.notice {
+  color: #bbb;
+  font-size: 0.95em;
+  margin-top: 8px;
+  background: #222c36;
+  border-radius: 7px;
+  padding: 6px 18px;
+}
+.preview {
+  width: 270px;
+  background: #21242e;
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 2px solid #323232;
+}
+.preview h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #ffd700;
+  font-size: 1.2em;
+}
+.preview img {
+  width: 170px;
+  height: 170px;
+  object-fit: contain;
+  border-radius: 14px;
+  border: 2px solid #444;
+  background: #181c25;
+}
